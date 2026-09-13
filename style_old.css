@@ -1,0 +1,353 @@
+.body{
+background:white;
+font-family:Arial;
+
+}
+
+
+/* ================================================= */
+/* --------------- Header Slider CSS --------------- */
+/* ================================================= */
+
+#header-bottom {
+    position: relative;
+}
+
+#search {
+    position: relative;
+    padding: 30px 0 20px 0;
+    background: #f2f2f2;
+}
+
+#search.search-slider {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    padding: 30px 0 20px 0;
+    width: 100%;
+    z-index: 999;
+    color: #ffffff;
+}
+
+
+#search.search-home {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    #search.search-slider {
+        display: none;
+    }
+    
+    #search.search-home {
+        display: block;
+    }
+    
+    #search {
+        padding: 30px 0 35px 0;
+    }
+    
+    #search .control-group-kid {
+        margin-top: 15px;
+    }
+}
+
+
+#search h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#search label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#search .input-group-text {
+    border-radius: 0 30px 30px 0;
+}
+
+#search input {
+    box-shadow: none;
+    border-radius: 30px 0 0 30px;
+}
+
+#search select,
+#search button {
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+
+
+#search input:focus,
+#search select:focus,
+#search button:focus {
+    border-color: #00CED1;
+}
+
+#search .btn {
+    margin-top: 31px;
+    color: #00CED1;
+    background: #222222;
+    border-color: #222222;
+}
+
+#search .btn:hover {
+    color: #222222;
+    background: #00CED1;
+    border-color: #00CED1;
+}
+
+#search.search-slider .btn {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+#search.search-slider .btn:hover {
+    background: #00CED1;
+    border-color: #00CED1;
+}
+
+#search.search-slider input,
+#search.search-slider select,
+#search.search-slider button,
+#search.search-slider .input-group-text {
+    border: none;
+}
+
+
+#headerSlider {
+    position: relative;
+    max-width: 100%;
+    max-height: calc();
+    margin: 0 auto;
+    text-align: center;
+}
+
+#headerSlider {
+    width: 100%;
+}
+
+.prev, .next { 
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			padding: 16px; 
+			color: white;
+			font-weight: bold;
+}
+
+.next { 
+	right: 0;
+}
+
+
+.main-menu{
+background:blue;
+margin-left: auto;
+
+}
+.main-menu {
+    padding: 0 130px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.main-menu ul li:hover a,
+.main-menu ul li.active a {
+    color: #ffffff;
+}
+
+.main-menu ul li a {
+    font-family: 'Roboto Slab', serif;
+    color: #00CED1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 10px;
+    line-height: 60px;
+    letter-spacing: .5px;
+    display: block;
+    transition: color .25s ease, background-color .25s ease;
+}
+
+
+.product-card{
+background:white;
+border-radius:10px;
+padding:15px;
+margin-bottom:20px;
+box-shadow:0 0 8px rgba(50,50,50,50);
+
+}
+footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            background: var(--white);
+            border-top: 1px solid #e5e7eb;
+        }
+
+
+.product-card{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+
+margin-bottom:20px;
+
+}
+.card{
+	border-radius:20px;
+	
+	margin-bottom:0px;
+
+
+}
+.card{
+margin-bottom:20px;
+	color:white;
+}
+
+
+
+
+/* Base styles for mobile first */
+.nav-links {
+  display: none; /* Hides the menu initially */
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Class added by JavaScript */
+.nav-links.active {
+  display: flex; 
+}
+
+.menu-toggle {
+  display: block; /* Shows burger button on mobile */
+  cursor: pointer;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex; /* Always show menu on desktop */
+    flex-direction: row;
+  }
+  .menu-toggle {
+    display: none; /* Hide burger button on desktop */
+  }
+}
+
+
+
+
+body{
+background:white;
+font-family:Arial;
+}
+.col-md-4{
+	background:;
+
+}
+.navbar{
+background:blue;
+}
+
+.product-card{
+background:white;
+border-radius:10px;
+padding:20px;
+box-shadow:0 0 8px rgba(50,50,50,50);
+margin-bottom:0px;
+}
+
+
+.shopping-cart{
+width:100%;
+height:100px;
+object-fit:cover;
+border-radius:10px;
+padding: 3% 0;
+}
+
+.quantity-selector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.qty-btn {
+  background: #f1f1f1;
+  border: none;
+  color: #333;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #e0e0e0;
+}
+
+.qty-btn:active {
+  background: #d0d0d0;
+}
+
+.qty-input {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background: transparent;
+  outline: none;
+}
+
+/* Hides native browser arrows/spinners */
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.qty-input {
+  -moz-appearance: textfield;
+}
+footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            background: var(--white);
+            border-top: 1px solid #e5e7eb;
+        }
+
+.card, h3{
+margin-bottom:20px;
+	color:white;
+}
